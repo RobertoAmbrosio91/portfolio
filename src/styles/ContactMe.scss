@@ -1,0 +1,70 @@
+@import "./variables.scss";
+
+.contact-wrapper {
+  padding: 20px 40px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-title {
+  color: $white;
+  font-family: "Quicksand";
+  font-size: clamp(1rem, 6vw, 3rem);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.contact-separator {
+  border: none;
+  border-bottom: 1px solid white;
+  margin-bottom: 20px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.contact-email,
+.contact-social {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  gap: 20px;
+}
+
+.contact-email span,
+.contact-social span {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+.contact-social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) and (min-width: 401px) {
+  .contact-title {
+    font-size: clamp(1rem, 5vw, 2.5rem);
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact-title {
+    margin-top: 20px;
+  }
+}
